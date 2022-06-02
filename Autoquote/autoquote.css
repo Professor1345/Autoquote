@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow: visible;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: slategray;
+    min-height: 100vh;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 14px;
+    color: white;
+    background-color:rgb(28, 40, 51);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.308); 
+}
+
+.autoquote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    text-align: center;
+}
+/* .quotes > [class^="q"]:not(.q1) {
+    display: none;
+} */
+ 
+.quotes{
+    background-color: aliceblue;
+    padding: 25px 30px;
+    width: 75%;
+    font-size: 23px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.308); 
+    /* transition: 0.5s ease; */
+    display: flex;
+    align-items: center;
+    /* vertical-align: middle; */
+    height: 14em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+/* .active{
+    display: block !important;
+} */
+button{
+    border: 2px solid grey;
+    background-color: transparent;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-top: 20px; */
+}
+button:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.308); 
+    transition: 0.5s ease;
+}
+
+/* FOOOTER */
+.footer{
+    margin-top: 16px;
+    position: sticky;
+    bottom: 0;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    padding: 14px;
+    background-color:rgb(77, 84, 90)
+}
+
+
+@media only screen and (max-width: 600px) {
+    .quotes{
+        font-size: 18px;
+        padding: 15px 15px;
+        width: 250px;
+    }
+
+    button{
+        font-size: 15px;
+        padding: 15px;
+    }
+    .header{
+        font-size: 20px;
+    }
+    .footer{
+        position: sticky;
+        font-size: 14px;
+        /* bottom: unset; */
+    }
+    
+}
